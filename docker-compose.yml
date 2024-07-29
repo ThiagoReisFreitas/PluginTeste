@@ -1,0 +1,13 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: minecraft_home_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: minecraft
+      MYSQL_USER: mcuser
+      MYSQL_PASSWORD: mcpass
+    ports:
+      - "3306:3306"
+    command: --default-authentication-plugin=mysql_native_password

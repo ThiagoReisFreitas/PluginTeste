@@ -1,0 +1,12 @@
+cooldown-seconds: 60
+teleport-particle: "EXPLOSION"
+database:
+        host: 172.18.0.2
+        port: 3306
+        name: minecraft
+        username: mcuser
+        password: mcpass
+explosion-power: 1.0
+projectile-velocity: 1.0
+particle-type: "EXPLOSION"
+

@@ -1,0 +1,32 @@
+name: PluginTeste
+version: '1.0'
+main: org.plugin.pluginTeste.PluginTeste
+api-version: '1.21'
+commands:
+  sethome:
+    description: Define sua localização atual como sua casa
+    usage: /sethome
+  home:
+    description: Teletransporta você para sua casa
+    usage: /home
+  setcooldown:
+    description: Define o cooldown do comando /home
+    usage: /setcooldown <segundos>
+    permission: homeplugin.setcooldown
+  setparticle:
+    description: Define o tipo de particula que vai ser usado no /home
+    usage: /setparticle <tipo_de_particula>
+  windcharge:
+    description: Configura as propriedades do Wind Charge
+    usage: /windcharge <propriedade> <valor>
+    permission: windcharge.configure
+permissions:
+  home.setcooldown:
+    description: Permite ao jogador definir o cooldown do comando /home
+    default: op
+  home.setparticle:
+    description: Permite o jogador definir qual sera o tipo de particula
+    default: op
+  windcharge.configure:
+    description: Permite o jogador definir as configurações relacionadas a wind charge
+    default: op
